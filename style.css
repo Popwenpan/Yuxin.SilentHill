@@ -1,0 +1,455 @@
+html{
+    cursor: url(img/silent-hill/Silent\ Hill\ Sword.cur), auto !important;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style:none;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #020912;
+    transform-style: preserve-3d;
+
+}
+
+.snow{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(img/1.png), url(img/2.png), url(img/3.png);
+    animation: animate 20s linear infinite;
+}
+
+.h2-1{
+    text-align: center;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100%{
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+
+.container{
+    max-width: 2620px;
+    width: 100%;
+    margin: 0 auto;
+    background-image:url(img/barbed\ wire\ 12.png);
+    
+}
+
+.intro-title{
+    text-align: center;
+}
+
+.intro-paragraph{
+    padding-left:400px;
+    padding-right:400px;
+
+}
+
+
+
+
+/* Star NavBar */
+nav{
+    width: 100%;
+    height:5rem;
+    /* background: rgb(252, 189, 107); */
+    position: absolute;
+    top:0;
+    left:0;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.nav-cotainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3{    transform: translateX(  162px);
+
+    font-size: 20px;
+    color: aliceblue;
+    user-select: none;
+    font-weight: 5;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-links li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 8px 11px;
+    transition: .4s ease;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover,
+.nav-links li .active{
+    color: #333;
+    background: #fff;
+
+}
+
+/* End NavBar */
+
+
+/* Star Yuxin Section */
+.Yuxin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: url('./img/silenthilltownsign-cropped-1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* .Yuxin-heading{
+    transform: translateY(  162px);
+
+
+    height: 1000px;
+    width: 356px;
+    position: absolute;
+    background-image: url(img/alessa21.gif);
+} */
+
+
+
+
+.Yuxin img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+#nurse{
+    transform: translate( 205px);
+    }
+
+#pyramid{
+        transform: translate( -285px);
+        }
+    
+
+#gate-left{
+transform: translate( -135px);
+}
+
+#gate-right{
+    transform: translateX(  162px);
+}
+
+#grass{
+    transform: translateY(  -43px);
+}
+    
+/* end Yuxin Section */
+
+/* Yuxin demo text */
+
+.Yuxin-demo{
+    position: relative;
+    background: #000000;
+    color: #fff;
+    padding-top: 6rem;
+}
+
+.Yuxin-demo h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Yuxin-demo p{
+    padding-bottom: 2rem;
+}
+/* Star Yuxin Section */
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin:100px auto;
+}
+
+.container-1{
+    padding:10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translate(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.container-1:nth-child(1){ 
+    animation-delay: 1.5s;
+}
+
+.container-1:nth-child(2){
+    animation-delay: 2.5s;
+}
+
+.container-1:nth-child(3){
+    animation-delay: 4s;
+}
+
+.container-1:nth-child(4){
+    animation-delay: 5.5s;
+}
+
+.container-1:nth-child(5){
+    animation-delay: 7s;
+}
+
+.container-1:nth-child(6){
+    animation-delay: 8.5s;
+}
+
+.container-1:nth-child(7){
+    animation-delay: 10s;
+}
+
+.container-1:nth-child(8){
+    animation-delay: 11.5s;
+}
+
+.container-1:nth-child(9){
+    animation-delay: 13s;
+}
+
+
+.text-box{
+    padding: 20px 30px;
+    background: #a8a8a8;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+
+.container-1 img{
+    position: absolute;
+    width: 400px;
+    border-radius: 50%;
+    right: -400px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -400px;
+}
+
+
+
+.timeline::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #c0816a;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 4.5 linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
+
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #a8a8a8;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #a8a8a8;
+    left: -15px;
+}
+
+@media screen and (max-width:600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container-1{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+
+
+    }
+}
+
+
+
+.note-intro{
+    text-align: center;
+    font-size: 18px;
+}
+
+.containercover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img{
+    width: 60%;
+    transform: translateX(  200px);
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet{
+    background: rgb(255, 255, 255)
+
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+.Image-evolution{
+    width: 1000px;
+    position:relative;
+    left: 350px;
+}
+
+.container-re{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    transform: translateX(  -350px);
+
+}
+
+.box{
+    height: 600px;
+    width: 1000px;
+    display: flex;
+  
+    /* background: linear-gradient(to right, #c0816a,#fff); */
+    color: #fff;
+    margin:80px 0;
+    border-radius: 7px;
+
+
+}
+
+.h3{    
+    margin-left: 680px;
+    
+}

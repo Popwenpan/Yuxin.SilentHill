@@ -1,0 +1,160 @@
+html{
+    cursor: url(img/silent-hill/Silent\ Hill\ Sword.cur), auto !important;
+
+}
+
+*{
+    margin:50;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style:none;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000000;
+    background-image:url(img/barbed\ wire\ 123.png);
+    }
+
+
+
+
+
+
+
+
+.container{
+    max-width: 2620px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+
+.intro-title{
+    text-align: center;
+}
+
+.intro-paragraph{
+    padding-left:400px;
+    padding-right:400px;
+
+}
+
+
+
+
+/* Star NavBar */
+nav{
+    width: 100%;
+    height:5rem;
+    /* background: rgb(252, 189, 107); */
+    position: absolute;
+    top:0;
+    left:0;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.nav-cotainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3{    transform: translateX(  162px);
+
+    font-size: 20px;
+    color: aliceblue;
+    user-select: none;
+    font-weight: 5;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-links li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 8px 11px;
+    transition: .4s ease;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover,
+.nav-links li .active{
+    color: #333;
+    background: #fff;
+
+}
+
+/* End NavBar */
+
+
+/* Star Yuxin Section */
+.Yuxin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: url('./img/silenthilltownsign-cropped-1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* .Yuxin-heading{
+    transform: translateY(  162px);
+
+
+    height: 1000px;
+    width: 356px;
+    position: absolute;
+    background-image: url(img/alessa21.gif);
+} */
+
+
+
+
+.Yuxin img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+    
+/* end Yuxin Section */
+
+
+.contact{
+    width: 100%;
+    margin: 0%;
+}
+
+.intro-title{
+    color: #ffffff;
+    margin-top: 100px;
+}
+.intro-paragraph{
+    color: #ffffff;
+ 
+}
